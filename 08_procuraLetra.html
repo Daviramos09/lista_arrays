@@ -9,11 +9,16 @@
     */
 
     //ENTRADA
-
-
+    const palavra = prompt(`informe uma palavra`).toUpperCase();
+    const letra = prompt(`informe uma letra`).toUpperCase();
     //PROCESSAMENTO
-
-
+   const posicao = palavra.indexOf(letra);
+   
+   if (posicao !== -1) {
+        alert(`A letra ${letra} existe na palavra ${palavra} e sua primeira posição é ${posicao}.`);
+    } else {
+        alert(`A letra ${letra} não existe na palavra ${palavra}.`);
+    }
     //SAÍDA
 
 </script>

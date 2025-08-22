@@ -9,10 +9,20 @@
     */
 
     //ENTRADA
-
+  const remover = prompt(`ìnforme qual carro deseja remover da lista,("Tiggo", "Sportage", "Tucson", "EcoSport")`);
 
     //PROCESSAMENTO
+let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
 
+let listaAntiga = [...carrosSUV]; 
+    let indice = carrosSUV.indexOf(remover); 
+
+    if (indice !== -1) { 
+        carrosSUV.splice(indice, 1); 
+        alert(`Lista antiga: ${listaAntiga.join(", ")}\nLista nova: ${carrosSUV.join(", ")}`);
+    } else {
+        alert("Carro não encontrado na lista!");
+    }
 
     //SAÍDA
 

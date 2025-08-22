@@ -7,10 +7,23 @@
     */
 
     //ENTRADA
+const n1 = parseInt(prompt("Digite o primeiro número:"));
+const n2 = parseInt(prompt("Digite o segundo número:"));
 
-
+const ordemC = [n1 , n2];
+const ordemD = [n2, n1];
     //PROCESSAMENTO
-
+if (n1 < n2) {
+    alert(ordemC.join(" - "));}
+    else if (n1 > n2 ) {
+        alert(ordemD.join(" - "));
+    }
+    else if (n1 == n2) {
+        alert(ordemC.join(" -"));
+    }
+    else {
+        alert(`informe valores válidos`)
+    }
 
     //SAÍDA
 
